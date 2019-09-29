@@ -10,7 +10,7 @@ fraseListada = frase.lower().split()
 
 frase2 = ' '
 for i in range(0, len(fraseListada)):
-  frase2 = frase2 + fraseListada[0]
+  frase2 = frase2 + fraseListada[i]
 frase2 = frase2.strip()
 
 
