@@ -9,7 +9,7 @@ contador = 0
 maiorValor = 0
 menorValor = 0
 soma = 0
-while verificacao not in  'Nn':
+while verificacao not in 'Nn':
   numero = int(input('\nDigite um número: '))
   if contador == 0:
     maiorValor = numero
