@@ -33,8 +33,10 @@ for i in range(0, len(fraseListada)):
 frase3 = frase3.strip()
 
 print('\nPalíndromo: frase ou palavra que se pode ler, indiferentemente, da esquerda para a direita ou vice-versa.')
-print('Frase digitada: ' +frase)
-print('Frase de trás para frente: ' +frase3)
+print('='*105)
+print('Frase digitada: "{}"' .format(frase.upper()))
+print('Frase de trás para frente: "{}"' .format(frase3.upper()))
+print('='*105)
 
 print('')
 if test == 'true':
