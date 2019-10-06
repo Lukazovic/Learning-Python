@@ -9,7 +9,7 @@ contador = 0
 maiorValor = 0
 menorValor = 0
 soma = 0
-while verificacao != 'N':
+while verificacao not in  'Nn':
   numero = int(input('\nDigite um número: '))
   if contador == 0:
     maiorValor = numero
@@ -20,7 +20,10 @@ while verificacao != 'N':
     menorValor = numero
   soma += numero
   contador += 1
-  verificacao = str(input('Deseja digitar outro valor ? [S/N]: ')).strip().upper()
+  verificacao = str(input('Deseja digitar outro valor ? [S/N]: ')).strip()
+  while verificacao not in 'SsNn':
+    print('Erro: Opção inexistente!')
+    verificacao = str(input('Deseja digitar outro valor ? [S/N]: ')).strip()
 
 media = soma/contador
 
