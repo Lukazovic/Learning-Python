@@ -11,7 +11,7 @@ while contador != 0:
   fatorial = fatorial * contador
   contador -= 1
   if contador != 0:
-    print('* ', end='')
+    print('x ', end='')
   else:
     print('= ', end='')
 
